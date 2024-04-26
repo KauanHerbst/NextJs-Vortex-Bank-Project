@@ -1,0 +1,99 @@
+@font-face {
+  font-family: NeueMachinaLight;
+  src: url('../fonts/NeueMachina-Light.otf');
+}
+
+@font-face {
+  font-family: NeueMachinaRegular;
+  src: url('../fonts/NeueMachina-Regular.otf');
+}
+
+@font-face {
+  font-family: NeueMachinaUltrabold;
+  src: url('../fonts/NeueMachina-Ultrabold.otf');
+}
+
+@font-face {
+  font-family: NeurialGroteskBold;
+  src: url('../fonts/NeurialGrotesk-Bold.otf');
+}
+
+@font-face {
+  font-family: NeurialGroteskExtrabold;
+  src: url('../fonts/NeurialGrotesk-Extrabold.otf');
+}
+
+@font-face {
+  font-family: NeurialGroteskMedium;
+  src: url('../fonts/NeurialGrotesk-Medium.otf');
+}
+
+@font-face {
+  font-family: NeurialGroteskRegular;
+  src: url('../fonts/NeurialGrotesk-Medium.otf');
+}
+
+@mixin loraFamily($size, $device: desktop) {
+  font-family: 'Lora', serif;
+
+  @if $size == h1 and $device == desktop {
+    font-size: 64px;
+    line-height: 100%;
+  } @else if $size == h1 and $device == mobile {
+    font-size: 48px;
+    line-height: 120%;
+  } @else if $size == h2 and $device == desktop {
+    font-size: 48;
+    line-height: 110%;
+  } @else if $size == h2 and $device == mobile {
+    font-size: 28px;
+    line-height: 120%;
+  } @else if $size == h3 and $device == desktop {
+    font-size: 40px;
+    line-height: 120%;
+  } @else if $size == h3 and $device == mobile {
+    font-size: 24px;
+    line-height: 120%;
+  } @else if $size == h4 and $device == desktop {
+    font-size: 18px;
+    line-height: 130%;
+    text-transform: uppercase;
+    font-weight: 600;
+  } @else if $size == h4 and $device == mobile {
+    font-size: 18px;
+    line-height: 120%;
+  }
+}
+
+// Roboto
+
+@mixin robotoFamily($size: p2, $device: desktop) {
+  font-family: 'Roboto', sans-serif;
+
+  @if $size == p1 and $device == desktop {
+    font-size: 24px;
+    line-height: 140%;
+  } @else if $size == p1 and $device == mobile {
+    font-size: 18px;
+    line-height: 140%;
+  } @else if $size == p2 and $device == desktop {
+    font-size: 18px;
+    line-height: 130%;
+  } @else if $size == p2 and $device == mobile {
+    font-size: 18px;
+    line-height: 120%;
+  } @else if $size == l1 and $device == desktop {
+    font-size: 22px;
+    line-height: 130%;
+  } @else if $size == l1 and $device == mobile {
+    font-size: 18px;
+    line-height: 120%;
+  } @else if $size == h5 and $device == desktop {
+    font-size: 18px;
+    line-height: 130%;
+    font-weight: 400;
+  } @else if $size == h5 and $device == mobile {
+    font-size: 18px;
+    line-height: 120%;
+  }
+}
