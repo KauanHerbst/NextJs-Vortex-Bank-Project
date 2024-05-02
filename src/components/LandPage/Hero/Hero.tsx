@@ -9,7 +9,7 @@ function Hero() {
       <div className="background-hero">
         <div className="container">
           <div className="flex-item-2 max-xl:flex max-xl:flex-col max-xl:justify-center max-xl:items-center">
-            <div className=" max-md:hidden">
+            <div className="max-md:hidden">
               <VortexBankSvg width="477" height="314"></VortexBankSvg>
             </div>
             <div className="mt-5 md:hidden">
@@ -28,7 +28,7 @@ function Hero() {
             </div>
           </div>
           <div className="flex-item-1 max-xl:hidden">
-            <div className="ml-60 mt-48">
+            <div className="ml-16 mt-48">
               <CardsGroupSvg width="530" height="500"></CardsGroupSvg>
             </div>
           </div>
