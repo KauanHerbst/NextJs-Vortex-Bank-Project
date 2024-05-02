@@ -33,8 +33,10 @@
   src: url('../fonts/NeurialGrotesk-Medium.otf');
 }
 
-@mixin loraFamily($size, $device: desktop) {
-  font-family: 'Lora', serif;
+//  Neue Machina Family
+
+@mixin NeuaFamily($size, $device: desktop) {
+  font-family: 'NeueMachinaRegular';
 
   @if $size == h1 and $device == desktop {
     font-size: 64px;
@@ -65,10 +67,22 @@
   }
 }
 
-// Roboto
+.neue-light{
+    font-family: 'NeueMachinaLight';
+}
 
-@mixin robotoFamily($size: p2, $device: desktop) {
-  font-family: 'Roboto', sans-serif;
+.neue-regular{
+    font-family: 'NeueMachinaRegular';
+}
+
+.neue-ultrabold{
+    font-family: 'NeueMachinaUltraBold';
+}
+
+// Neurial Grotesk Family
+
+@mixin NeurialFamily($size: p2, $device: desktop) {
+  font-family: 'NeurialGroteskRegular';
 
   @if $size == p1 and $device == desktop {
     font-size: 24px;
@@ -97,3 +111,4 @@
     line-height: 120%;
   }
 }
+

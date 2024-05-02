@@ -2,5 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '../partials//colors';
 @import '../partials/layout';
 @import '../partials/typhograpy';
+@import '../partials//buttons';
+@import '../partials//themes';
+
+.background-hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/background-hero.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
