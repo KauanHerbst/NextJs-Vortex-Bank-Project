@@ -3,6 +3,7 @@ import SectionApp from '@/components/LandPage/SectionApp/SectionApp';
 import SectionBenefits from '@/components/LandPage/SectionBenefits/SectionBenefits';
 import SectionCTACard from '@/components/LandPage/SectionCTACard/SectionCTACard';
 import SectionCards from '@/components/LandPage/SectionCards/SectionCards';
+import SectionCreateAccount from '@/components/LandPage/SectionCreateAccount/SectionCreateAccount';
 import SectionFeedback from '@/components/LandPage/SectionFeedback/SectionFeedback';
 import SectionLoan from '@/components/LandPage/SectionLoan/SectionLoan';
 
@@ -16,6 +17,7 @@ export default function Home() {
       <SectionApp></SectionApp>
       <SectionLoan></SectionLoan>
       <SectionFeedback></SectionFeedback>
+      <SectionCreateAccount></SectionCreateAccount>
     </main>
   );
 }

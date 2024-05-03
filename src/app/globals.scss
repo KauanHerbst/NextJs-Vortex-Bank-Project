@@ -9,7 +9,7 @@
 @import '../partials//themes';
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .background-hero {
@@ -26,39 +26,67 @@ body {
 }
 
 .appImage {
-    width: 375.28px;
-    height: 772.65px;
-    background-image: url('../images/AppImage.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
+  width: 375.28px;
+  height: 772.65px;
+  background-image: url('../images/AppImage.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
 
 #people-one {
-    background-image: url('../images/PeopleOne.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url('../images/PeopleOne.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #people-two {
-    background-image: url('../images/PeopleTwo.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url('../images/PeopleTwo.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #people-three {
-    background-image: url('../images/PeopleThree.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url('../images/PeopleThree.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #people-four {
-    background-image: url('../images/PeopleFour.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url('../images/PeopleFour.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.custom-input {
+  transition: all 0.3s ease;
+  input {
+    position: relative;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-width: 0;
+    border-bottom-width: 8px;
+    border-color: white;
+    background-color: transparent;
+    border-radius: 0.25rem;
+    width: 100%;
+    outline: none;
+    transition: all 0.3s ease;
+    &:focus ~ label,
+    &:valid ~ label {
+      font-size: 1.5rem;
+      transform: translateY(-25px);
+    }
+  }
+  label {
+    position: absolute;
+    font-size: 1.5rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
 }
