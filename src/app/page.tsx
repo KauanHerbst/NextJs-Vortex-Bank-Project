@@ -1,4 +1,5 @@
 import Hero from '@/components/LandPage/Hero/Hero';
+import SectionApp from '@/components/LandPage/SectionApp/SectionApp';
 import SectionBenefits from '@/components/LandPage/SectionBenefits/SectionBenefits';
 import SectionCTACard from '@/components/LandPage/SectionCTACard/SectionCTACard';
 import SectionCards from '@/components/LandPage/SectionCards/SectionCards';
@@ -10,6 +11,7 @@ export default function Home() {
       <SectionCards></SectionCards>
       <SectionBenefits></SectionBenefits>
       <SectionCTACard></SectionCTACard>
+      <SectionApp></SectionApp>
     </main>
   );
 }

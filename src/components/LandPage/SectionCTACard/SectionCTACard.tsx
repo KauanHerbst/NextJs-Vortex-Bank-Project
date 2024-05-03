@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 function SectionCTACard() {
   return (
-    <section className="bg-blue-primary mt-64 min-w-[300px] max-w-[1100px] p-5 flex justify-center ">
+    <section className="bg-blue-primary mt-64 min-w-[300px] max-w-[1100px] p-5 flex justify-center mb-36">
       <div className="flex justify-center items-center flex-col">
         <h3 className="neurial-regular text-2xl w-[278px]">
           Conta gratuita, cartão de crédito sem anuidade, empréstimo e muito mais

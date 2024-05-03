@@ -24,3 +24,13 @@ body {
     width: 100vw;
   }
 }
+
+.appImage {
+    width: 375.28px;
+    height: 772.65px;
+    background-image: url('../images/AppImage.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
