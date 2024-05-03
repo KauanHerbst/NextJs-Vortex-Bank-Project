@@ -7,7 +7,7 @@ import StellarCardSvg from '@/svgs/StellarCard/StellarCardSvg';
 import { useEffect, useState } from 'react';
 
 function SectionCards() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState(0);
   const [cardDimension, setCardDimension] = useState<dimensionOfCard>();
 
   type dimensionOfCard = {
@@ -27,7 +27,6 @@ function SectionCards() {
   }
 
   useEffect(() => {
-
     function getScreenDimensions() {
       let width = window.innerWidth;
       setScreenWidth(width);
