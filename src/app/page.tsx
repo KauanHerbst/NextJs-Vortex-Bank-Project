@@ -1,3 +1,4 @@
+import Footer from '@/components/LandPage/Footer/Footer';
 import Hero from '@/components/LandPage/Hero/Hero';
 import SectionApp from '@/components/LandPage/SectionApp/SectionApp';
 import SectionBenefits from '@/components/LandPage/SectionBenefits/SectionBenefits';
@@ -18,6 +19,7 @@ export default function Home() {
       <SectionLoan></SectionLoan>
       <SectionFeedback></SectionFeedback>
       <SectionCreateAccount></SectionCreateAccount>
+      <Footer></Footer>
     </main>
   );
 }

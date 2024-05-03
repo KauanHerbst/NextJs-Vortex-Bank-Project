@@ -15,13 +15,13 @@ function SectionLoan() {
         </p>
         <Link
           href={'/about'}
-          className="bg-blue-primary text-center btn-primary border-2 p-2 px-12 rounded-2xl border-blue-primary shadow-sm shadow-blue-primary hover:bg-blue-primary w-[280px] m-3 "
+          className="bg-blue-primary text-center btn-primary border-2 p-2 px-10 rounded-2xl border-blue-primary shadow-sm shadow-blue-primary hover:bg-blue-primary w-[280px] m-3 hover:p-3 hover:px-12"
         >
           Saiba Mais
         </Link>
       </div>
       <div className="flex-item-2 flex flex-col ">
-        <div className='relative max-xl:flex max-md:flex-col max-md:items-center'>
+        <div className="relative max-xl:flex max-md:flex-col max-md:items-center">
           <div className="bg-purple-black-primary border-[1px] border-blue-black-2 shadow-md shadow-blue-primary rounded-md w-64 h-72 p-4 flex flex-col items-center absolute top-[-280px] max-xl:static max-xl:top-0">
             <div className="bg-blue-primary w-16 h-16 rounded-full flex justify-center items-center mt-2">
               <SuitCaseSvg width="45" height="45"></SuitCaseSvg>
@@ -43,7 +43,7 @@ function SectionLoan() {
             </p>
           </div>
         </div>
-        <div className='relative max-xl:flex max-xl:mt-8 max-md:flex-col max-md:items-center'>
+        <div className="relative max-xl:flex max-xl:mt-8 max-md:flex-col max-md:items-center">
           <div className="bg-purple-black-primary border-[1px] border-blue-black-2 shadow-md shadow-blue-primary rounded-md w-64 h-72 p-4 flex flex-col items-center absolute top-[70px] max-xl:static max-xl:top-0 ">
             <div className="bg-blue-primary w-16 h-16 rounded-full flex justify-center items-center mt-2">
               <ApprovedSvg width="45" height="45"></ApprovedSvg>
