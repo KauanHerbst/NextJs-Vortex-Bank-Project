@@ -3,6 +3,7 @@ import SectionApp from '@/components/LandPage/SectionApp/SectionApp';
 import SectionBenefits from '@/components/LandPage/SectionBenefits/SectionBenefits';
 import SectionCTACard from '@/components/LandPage/SectionCTACard/SectionCTACard';
 import SectionCards from '@/components/LandPage/SectionCards/SectionCards';
+import SectionLoan from '@/components/LandPage/SectionLoan/SectionLoan';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <SectionBenefits></SectionBenefits>
       <SectionCTACard></SectionCTACard>
       <SectionApp></SectionApp>
+      <SectionLoan></SectionLoan>
     </main>
   );
 }
