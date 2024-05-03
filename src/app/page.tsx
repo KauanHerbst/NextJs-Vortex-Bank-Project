@@ -1,5 +1,6 @@
 import Hero from '@/components/LandPage/Hero/Hero';
 import SectionBenefits from '@/components/LandPage/SectionBenefits/SectionBenefits';
+import SectionCTACard from '@/components/LandPage/SectionCTACard/SectionCTACard';
 import SectionCards from '@/components/LandPage/SectionCards/SectionCards';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero></Hero>
       <SectionCards></SectionCards>
       <SectionBenefits></SectionBenefits>
+      <SectionCTACard></SectionCTACard>
     </main>
   );
 }
