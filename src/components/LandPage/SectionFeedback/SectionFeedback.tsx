@@ -1,26 +1,65 @@
+'use client';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import ArrowUpSvg from '@/svgs/ArrowUp/ArrowUpSvg';
-import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 function SectionFeedback() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <section className="container flex flex-col">
       <div className="mt-72">
-        <h2 className="text-5xl neue-regular">Feedbacks</h2>
-        <p className="mt-5 neurial-regular text-xl text-white-black-primary">
+        <h2
+          className="text-5xl neue-regular"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="200"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          Feedbacks
+        </h2>
+        <p
+          className="mt-5 neurial-regular text-xl text-white-black-primary"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-delay="350"
+          data-aos-anchor-placement="top-center"
+        >
           Clientes satisfeitos todos os dias
         </p>
       </div>
       <div className="flex mt-8 max-md:flex-col justify-center items-center">
         <div className="flex-item-1 max-md:justify-center max-md:items-center max-md:mt-10">
-          <h3 className="text-3xl neue-regular w-64">+50 Milhões de Clientes</h3>
-          <p className="m-5 neurial-regular text-xl text-white-black-primary max-md:w-72 ">
+          <h3
+            className="text-3xl neue-regular w-64"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="350"
+            data-aos-anchor-placement="top-center"
+          >
+            +50 Milhões de Clientes
+          </h3>
+          <p
+            className="m-5 neurial-regular text-xl text-white-black-primary max-md:w-72 "
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="450"
+            data-aos-anchor-placement="top-center"
+          >
             Diversos clientes estão satisfeitos por utilizar nosso banco diariamente.
             Venha criar sua conta agora mesmo.
           </p>
           <Link
             href={'/account'}
             className="flex items-center justify-center text-center btn-primary border-2 p-2 rounded-2xl border-blue-primary shadow-sm shadow-blue-primary hover:bg-blue-primary text-xl mt-8 w-64"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="500"
+            data-aos-anchor-placement="top-center"
           >
             <h2 className="mr-8">Seja Vortex</h2>
             <ArrowUpSvg width="30" height="30"></ArrowUpSvg>
@@ -28,9 +67,15 @@ function SectionFeedback() {
         </div>
         <div className="flex-item-2">
           <div className="flex max-xl:flex-col">
-            <div className="flex flex-col justify-center bg-purple-black-primary border-l-8 border-blue-black-2 border-t-2 border-b-2 border-r-2 rounded-md p-2 w-[356px] shadow-md shadow-blue-primary">
+            <div
+              className="flex flex-col justify-center bg-purple-black-primary border-l-8 border-blue-black-2 border-t-2 border-b-2 border-r-2 rounded-md p-2 w-[356px] shadow-md shadow-blue-primary"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-delay="400"
+              data-aos-anchor-placement="top-center"
+            >
               <div className="flex">
-                <div className="w-[112px] h-28" id='people-one'></div>
+                <div className="w-[112px] h-28" id="people-one"></div>
                 <div className="flex flex-col items-center">
                   <div className="text-lg text-blue-white-2 neurial-regular">
                     Comentário
@@ -44,9 +89,15 @@ function SectionFeedback() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col justify-center bg-purple-black-primary border-l-8 border-blue-black-2 border-t-2 border-b-2 border-r-2 rounded-md p-2 w-[356px] shadow-md shadow-blue-primary ml-8 max-xl:ml-0 max-xl:mt-6">
+            <div
+              className="flex flex-col justify-center bg-purple-black-primary border-l-8 border-blue-black-2 border-t-2 border-b-2 border-r-2 rounded-md p-2 w-[356px] shadow-md shadow-blue-primary ml-8 max-xl:ml-0 max-xl:mt-6"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              data-aos-delay="400"
+              data-aos-anchor-placement="top-center"
+            >
               <div className="flex">
-                <div className="w-[112px] h-28" id='people-two'></div>
+                <div className="w-[112px] h-28" id="people-two"></div>
                 <div className="flex flex-col items-center">
                   <div className="text-lg text-blue-white-2 neurial-regular">
                     Comentário
@@ -62,9 +113,15 @@ function SectionFeedback() {
             </div>
           </div>
           <div className="flex mt-6 max-xl:flex-col ">
-            <div className="flex flex-col justify-center bg-purple-black-primary border-l-8 border-blue-black-2 border-t-2 border-b-2 border-r-2 rounded-md p-2 w-[356px] shadow-md shadow-blue-primary">
+            <div
+              className="flex flex-col justify-center bg-purple-black-primary border-l-8 border-blue-black-2 border-t-2 border-b-2 border-r-2 rounded-md p-2 w-[356px] shadow-md shadow-blue-primary"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-delay="400"
+              data-aos-anchor-placement="top-center"
+            >
               <div className="flex">
-                <div className="w-[112px] h-28" id='people-three'></div>
+                <div className="w-[112px] h-28" id="people-three"></div>
                 <div className="flex flex-col items-center">
                   <div className="text-lg text-blue-white-2 neurial-regular">
                     Comentário
@@ -78,9 +135,15 @@ function SectionFeedback() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col justify-center bg-purple-black-primary border-l-8 border-blue-black-2 border-t-2 border-b-2 border-r-2 rounded-md p-2 w-[356px] shadow-md shadow-blue-primary ml-8 max-xl:ml-0 max-xl:mt-6">
+            <div
+              className="flex flex-col justify-center bg-purple-black-primary border-l-8 border-blue-black-2 border-t-2 border-b-2 border-r-2 rounded-md p-2 w-[356px] shadow-md shadow-blue-primary ml-8 max-xl:ml-0 max-xl:mt-6"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              data-aos-delay="400"
+              data-aos-anchor-placement="top-center"
+            >
               <div className="flex">
-                <div className="w-[112px] h-28" id='people-four'></div>
+                <div className="w-[112px] h-28" id="people-four"></div>
                 <div className="flex flex-col items-center">
                   <div className="text-lg text-blue-white-2 neurial-regular">
                     Comentário

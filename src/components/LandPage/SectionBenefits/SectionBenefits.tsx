@@ -1,19 +1,47 @@
+'use client';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import ArrowUpSvg from '@/svgs/ArrowUp/ArrowUpSvg';
 import CallSvg from '@/svgs/Call/CallSvg';
 import PadlockSvg from '@/svgs/Padlock/PadlockSvg';
 import PhoneSvg from '@/svgs/Phone/PhoneSvg';
 import VectorSSvg from '@/svgs/VectorS/VectorSSvg';
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 function SectionBenefits() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <section className="container flex">
+    <section className="container flex mt-56">
       <div className="flex-item-1 flex flex-col justify-center items-center">
-        <h2 className="text-5xl neue-regular text-center">Benefícios</h2>
-        <p className="neurial-regular text-xl text-white-black-primary mt-8 w-80 m-auto text-justify max-md:hidden">
+        <h2
+          className="text-5xl neue-regular text-center"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-delay="300"
+          data-aos-anchor-placement="top-center"
+        >
+          Benefícios
+        </h2>
+        <p
+          className="neurial-regular text-xl text-white-black-primary mt-8 w-80 m-auto text-justify max-md:hidden"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-delay="400"
+          data-aos-anchor-placement="top-center"
+        >
           Conta gratuita, cartão de crédito sem anuidade, empréstimo e muito mais
         </p>
-        <Link href={'/account'}>
+        <Link
+          href={'/account'}
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-delay="500"
+          data-aos-anchor-placement="top-center"
+        >
           <div className="flex items-center justify-center text-center btn-primary border-2 p-2 rounded-2xl border-blue-primary shadow-sm shadow-blue-primary hover:bg-blue-primary text-xl mt-8 w-[248px] max-lg:mb-16 max-md:hidden">
             <h3 className="mr-8">Abrir Conta</h3>
             <ArrowUpSvg width="30" height="30"></ArrowUpSvg>
@@ -22,7 +50,13 @@ function SectionBenefits() {
       </div>
       <div className="flex-item-3 ml-12 max-md:ml-2 cursor-default">
         <div className="flex justify-center items-center max-xl:flex-col">
-          <div className="w-80 h-56 border-l-8 px- border-blue-primary rounded-sm shadow-2xl flex flex-col items-center hover:border-r-2 hover:border-t-2 hover:border-b-2 duration-75 hover:rounded-lg ">
+          <div
+            className="w-80 h-56 border-l-8 px- border-blue-primary rounded-sm shadow-2xl flex flex-col items-center hover:border-r-2 hover:border-t-2 hover:border-b-2 duration-75 hover:rounded-lg"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="500"
+            data-aos-anchor-placement="top-center"
+          >
             <div className="bg-white w-16 h-16 rounded-full flex justify-center items-center shadow-md shadow-blue-primary mt-2">
               <VectorSSvg width="40" height="40"></VectorSSvg>
             </div>
@@ -31,7 +65,13 @@ function SectionBenefits() {
               Uma conta digital que te dá controle sobre o seu dinheiro.
             </p>
           </div>
-          <div className="w-80 h-56 ml-8 border-l-8 px- border-blue-primary rounded-sm shadow-2xl flex flex-col items-center max-xl:mt-12 max-xl:ml-0 hover:border-r-2 hover:border-t-2 hover:border-b-2 duration-75 hover:rounded-lg">
+          <div
+            className="w-80 h-56 ml-8 border-l-8 px- border-blue-primary rounded-sm shadow-2xl flex flex-col items-center max-xl:mt-12 max-xl:ml-0 hover:border-r-2 hover:border-t-2 hover:border-b-2 duration-75 hover:rounded-lg"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="600"
+            data-aos-anchor-placement="top-center"
+          >
             <div className="bg-white w-16 h-16 rounded-full flex justify-center items-center shadow-md shadow-blue-primary mt-2">
               <PadlockSvg width="40" height="40"></PadlockSvg>
             </div>
@@ -42,7 +82,13 @@ function SectionBenefits() {
           </div>
         </div>
         <div className="flex justify-center items-center mt-10 max-xl:flex-col">
-          <div className="w-80 h-56 border-l-8 px- border-blue-primary rounded-sm shadow-2xl flex flex-col items-center hover:border-r-2 hover:border-t-2 hover:border-b-2 duration-75 hover:rounded-lg">
+          <div
+            className="w-80 h-56 border-l-8 px- border-blue-primary rounded-sm shadow-2xl flex flex-col items-center hover:border-r-2 hover:border-t-2 hover:border-b-2 duration-75 hover:rounded-lg"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="700"
+            data-aos-anchor-placement="top-center"
+          >
             <div className="bg-white w-16 h-16 rounded-full flex justify-center items-center shadow-md shadow-blue-primary mt-2">
               <PhoneSvg width="40" height="40"></PhoneSvg>
             </div>
@@ -51,7 +97,13 @@ function SectionBenefits() {
               Invista em uma experiência bancária eficiente e inovadora.
             </p>
           </div>
-          <div className="w-80 h-56 ml-8 border-l-8 px- border-blue-primary rounded-sm shadow-2xl flex flex-col items-center max-xl:mt-12 max-xl:ml-0 hover:border-r-2 hover:border-t-2 hover:border-b-2 duration-75 hover:rounded-lg">
+          <div
+            className="w-80 h-56 ml-8 border-l-8 px- border-blue-primary rounded-sm shadow-2xl flex flex-col items-center max-xl:mt-12 max-xl:ml-0 hover:border-r-2 hover:border-t-2 hover:border-b-2 duration-75 hover:rounded-lg"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="800"
+            data-aos-anchor-placement="top-center"
+          >
             <div className="bg-white w-16 h-16 rounded-full flex justify-center items-center shadow-md shadow-blue-primary mt-2">
               <CallSvg width="40" height="40"></CallSvg>
             </div>
@@ -63,11 +115,23 @@ function SectionBenefits() {
         </div>
       </div>
       <div className="md:hidden mt-12">
-        <p className="neurial-regular text-xl text-white-black-primary mt-8 w-80 m-auto text-justify">
+        <p
+          className="neurial-regular text-xl text-white-black-primary mt-8 w-80 m-auto text-justify"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-delay="400"
+          data-aos-anchor-placement="top-center"
+        >
           Conta gratuita, cartão de crédito sem anuidade, empréstimo e muito mais
         </p>
         <Link href={'/account'}>
-          <div className="flex items-center justify-center text-center btn-primary border-2 p-2 rounded-2xl border-blue-primary shadow-sm shadow-blue-primary hover:bg-blue-primary text-xl mt-8 w-[248px] max-lg:mb-16">
+          <div
+            className="flex items-center justify-center text-center btn-primary border-2 p-2 rounded-2xl border-blue-primary shadow-sm shadow-blue-primary hover:bg-blue-primary text-xl mt-8 w-[248px] max-lg:mb-16"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="500"
+            data-aos-anchor-placement="top-center"
+          >
             <h3 className="mr-8">Abrir Conta</h3>
             <ArrowUpSvg width="30" height="30"></ArrowUpSvg>
           </div>

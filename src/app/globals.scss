@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '../partials//colors';
+@import '../partials/colors';
 @import '../partials/layout';
 @import '../partials/typhograpy';
-@import '../partials//buttons';
-@import '../partials//themes';
+@import '../partials/buttons';
+@import '../partials/themes';
+@import '../partials/animations';
 
 body {
   overflow-x: hidden;
