@@ -34,7 +34,7 @@ function SectionCreateAccount() {
         </div>
       </div>
       <div
-        className="flex-item-3 ml-12 bg-blue-primary w-[324px] h-[380px] rounded-lg p-3 flex flex-col items-center max-lg:h-[432px] max-lg:m-auto max-lg:w-[100%] "
+        className="flex-item-3 ml-12 bg-blue-primary w-[324px] h-[396px] rounded-lg p-3 flex flex-col items-center max-lg:h-[432px] max-lg:m-auto max-lg:w-[100%] "
         data-aos="fade-left"
         data-aos-duration="2000"
         data-aos-delay="300"

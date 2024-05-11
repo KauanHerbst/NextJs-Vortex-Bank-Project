@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import './globals.scss';
-import Header from '@/components/LandPage/Header/Header';
 
 export const metadata: Metadata = {
   title: 'Vortex Bank | DEV',
@@ -14,8 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className="bg-purple-black-2 flex justify-center ">
-        <Header></Header>
+      <body className="bg-purple-black-2 flex justify-center">
         {children}
       </body>
     </html>

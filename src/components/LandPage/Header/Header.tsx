@@ -32,7 +32,7 @@ function Header() {
   }, [scrollY]);
 
   return (
-    <header className="w-[100%] z-50 fixed flex justify-center ease-in-out">
+    <header className="w-[100%] z-50 fixed flex justify-center ease-in-out h-[95px]">
       <div className="w-[1140px] flex justify-between items-center max-xl:w-[100%]">
         <div className=" ml-2">
           <Link href={'/'}>

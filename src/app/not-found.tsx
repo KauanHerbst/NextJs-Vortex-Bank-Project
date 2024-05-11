@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 function NotFound() {
   return (
-    <section className="container flex flex-col">
+    <section className="flex flex-col">
       <div className="flex flex-col justify-center items-center">
         <div className="max-sm:hidden">
           <VortexBankHorizontalSvg width="500" height="450"></VortexBankHorizontalSvg>

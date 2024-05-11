@@ -1,4 +1,5 @@
 import Footer from '@/components/LandPage/Footer/Footer';
+import Header from '@/components/LandPage/Header/Header';
 import Hero from '@/components/LandPage/Hero/Hero';
 import SectionApp from '@/components/LandPage/SectionApp/SectionApp';
 import SectionBenefits from '@/components/LandPage/SectionBenefits/SectionBenefits';
@@ -11,6 +12,7 @@ import SectionLoan from '@/components/LandPage/SectionLoan/SectionLoan';
 export default function Home() {
   return (
     <main className="bg-purple-black-2">
+      <Header></Header>
       <Hero></Hero>
       <SectionCards></SectionCards>
       <SectionBenefits></SectionBenefits>

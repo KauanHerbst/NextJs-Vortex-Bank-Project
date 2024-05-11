@@ -14,8 +14,8 @@ function SectionLoan() {
     Aos.init();
   }, []);
   return (
-    <section className="container">
-      <div className="flex-item-1 flex flex-col justify-center">
+    <section className="container h-[548px]">
+      <div className="flex-item-1 flex flex-col justify-center h-[272px]">
         <h2
           className="text-5xl neue-regular"
           data-aos="fade-right"
@@ -37,7 +37,7 @@ function SectionLoan() {
         </p>
         <Link
           href={'/about'}
-          className="bg-blue-primary text-center btn-primary border-2 p-2 px-10 rounded-2xl border-blue-primary shadow-sm shadow-blue-primary hover:bg-blue-primary w-[280px] m-3 hover:p-3 hover:px-12"
+          className="bg-blue-primary text-center btn-primary border-2 p-2 px-5 rounded-2xl border-blue-primary shadow-sm shadow-blue-primary hover:bg-blue-primary w-[280px] m-3 hover:p-3 hover:px-6  "
           data-aos="fade-right"
           data-aos-duration="2000"
           data-aos-delay="400"
