@@ -12,7 +12,7 @@ export default function Sobre() {
       </div>
       <div className='flex flex-col justify-center items-center'>
         <h1 className='text-4xl neue-ultrabold'>Aviso Importante</h1>
-        <p className='text-justify mt-5 neurial-regular text-2xl w-96'>
+        <p className='text-justify mt-5 neurial-regular text-2xl w-96 max-md:text-xl max-sm:w-72'>
           Este projeto foi desenvolvido exclusivamente para fins educativos e como parte
           de um portfólio de habilidades. Nenhum dado fornecido aqui será utilizado de
           verdade. Se você optar por adicionar qualquer informação, por favor,
@@ -21,7 +21,7 @@ export default function Sobre() {
         </p>
       </div>
       <div>
-        <h2 className='neue-regular text-3xl mt-8'>Desenvolvido por: Kauan Herbst</h2>
+        <h2 className='neue-regular text-3xl mt-8 max-md:text-2xl max-sm:w-72'>Desenvolvido por: Kauan Herbst</h2>
         <div className=" flex justify-center items-center mt-4">
           <Link
             href={'https://github.com/KauanHerbst'}
@@ -41,7 +41,7 @@ export default function Sobre() {
       </div>
       <div className='mt-5'>
         <Link href={'/'}>
-          <div className="flex items-center justify-center text-center btn-primary border-2 p-3 px-5 rounded-2xl border-blue-primary shadow-sm shadow-blue-primary hover:bg-blue-primary text-xl">
+          <div className="flex items-center justify-center text-center btn-primary border-2 p-3 px-5 rounded-2xl border-blue-primary shadow-sm shadow-blue-primary hover:bg-blue-primary text-xl mb-10">
             <span className="mr-7">Ir Para Página Principal</span>
             <ArrowUpSvg width="30" height="30"></ArrowUpSvg>
           </div>

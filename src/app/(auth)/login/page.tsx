@@ -1,3 +1,4 @@
+import CustomInput from '@/components/app/CustomInput/CustomInput';
 import VortexBankHorizontalSvg from '@/svgs/VortexBankHorizontal/VortexBankHorizontalSvg';
 import Link from 'next/link';
 
@@ -15,26 +16,8 @@ export default function Login() {
             <h2 className="text-3xl neurial-bold text-black dark:text-white">
               Realizar Login
             </h2>
-            <div className="mt-10 custom-input  relative">
-              <input
-                type="text"
-                className="border-purple-black-2 dark:border-b-white text-black dark:text-white"
-                required
-              ></input>
-              <label htmlFor="cpf" className="right-[245px] text-black dark:text-white">
-                CPF
-              </label>
-            </div>
-            <div className="mt-10 custom-input relative">
-              <input
-                type="password"
-                className="border-purple-black-2 dark:border-b-white text-black dark:text-white"
-                required
-              ></input>
-              <label htmlFor="senha" className="right-[220px] text-black dark:text-white">
-                Senha
-              </label>
-            </div>
+            <CustomInput class='mt-10 w-72' for='cpf' classLabel='right-[245px]' text='CPF' type='text'></CustomInput>
+            <CustomInput class='mt-12 w-72' for='senha' classLabel='right-[225px]' text='Senha' type='password'></CustomInput>
             <Link href={'/'} className="text-blue-primary mt-3">
               Esqueceu a senha?
             </Link>

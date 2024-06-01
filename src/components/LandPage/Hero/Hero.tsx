@@ -10,14 +10,14 @@ import { useEffect } from 'react';
 
 function Hero() {
   useEffect(() => {
-    Aos.init();
+    Aos.init({ disable: 'mobile', once: true });
   }, []);
   return (
     <section>
       <div className="background-hero">
         <div className="container">
           <div className="flex-item-2 max-xl:flex max-xl:flex-col max-xl:justify-center max-xl:items-center">
-            <div className="max-md:hidden" data-aos="fade-right" data-aos-duration="2000" >
+            <div className="max-md:hidden" data-aos="fade-right" data-aos-duration="2000">
               <VortexBankSvg width="477" height="314"></VortexBankSvg>
             </div>
             <div

@@ -51,7 +51,7 @@ function SectionBenefits() {
       <div className="flex-item-3 ml-12 max-md:ml-2 cursor-default">
         <div className="flex justify-center items-center max-xl:flex-col">
           <div
-            className="w-80 h-56 border-l-8 px- border-blue-primary rounded-sm shadow-2xl flex flex-col items-center hover:border-r-2 hover:border-t-2 hover:border-b-2 duration-75 hover:rounded-lg"
+            className="w-80 h-56 border-l-8 border-blue-primary rounded-sm shadow-2xl flex flex-col items-center hover:border-r-2 hover:border-t-2 hover:border-b-2 duration-75 hover:rounded-lg"
             data-aos="fade-right"
             data-aos-duration="2000"
             data-aos-delay="500"

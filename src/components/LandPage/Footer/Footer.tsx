@@ -41,7 +41,6 @@ function Footer() {
           data-aos="fade-up"
           data-aos-duration="2000"
           data-aos-delay="300"
-          data-aos-anchor-placement="top-center"
         >
           <LogoVB width="90" height="90"></LogoVB>
           <h2 className="text-3xl neue-regular mt-12">Vortex Bank</h2>

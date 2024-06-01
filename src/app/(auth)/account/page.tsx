@@ -1,3 +1,4 @@
+import CustomInput from '@/components/app/CustomInput/CustomInput';
 import VortexBankHorizontalSvg from '@/svgs/VortexBankHorizontal/VortexBankHorizontalSvg';
 import Link from 'next/link';
 
@@ -18,16 +19,7 @@ export default function Account() {
             <h3 className="text-xl text-justify mt-6 w-64 neurial-regular text-black dark:text-white">
               Digite seu CPF para abrir sua conta na Vortex
             </h3>
-            <div className="mt-8 custom-input  relative">
-              <input
-                type="text"
-                className="border-purple-black-2 dark:border-b-white text-black dark:text-white"
-                required
-              ></input>
-              <label htmlFor="cpf" className="right-[245px] text-black dark:text-white">
-                CPF
-              </label>
-            </div>
+            <CustomInput class='mt-10 w-72' for='cpf' classLabel='right-[245px]' text='CPF' type='text'></CustomInput>
             <button className="text-center btn-primary bg-blue-primary p-2 px-20 rounded-2xl shadow-sm mt-7 mb-7 hover:px-24 duration-100">
               Confirmar
             </button>

@@ -6,6 +6,7 @@ import EllipseBlurSvg from '@/svgs/EllipseBlur/EllipseBlurSvg';
 import SideCardSvg from '@/svgs/SideCard/SideCardSvg';
 import Link from 'next/link';
 import { useEffect } from 'react';
+import CustomInput from '@/components/app/CustomInput/CustomInput';
 
 function SectionCreateAccount() {
   useEffect(() => {
@@ -44,9 +45,9 @@ function SectionCreateAccount() {
         <p className="neurial-regular text-xl text-white w-48 text-center mt-8">
           Uma conta digital que te dá controle sobre o seu dinheiro.
         </p>
-        <div className="mt-10 custom-input relative">
-          <input type="text" required></input>
-          <label htmlFor="cpf" className="right-[245px]">
+       <div className="mt-10 custom-input relative">
+          <input type="text" className='border-white' required></input>
+          <label htmlFor="cpf" className="right-[197px]">
             CPF
           </label>
         </div>
