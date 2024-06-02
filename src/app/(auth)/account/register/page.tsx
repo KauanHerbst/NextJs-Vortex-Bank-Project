@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Register() {
   return (
-    <main className="w-[100%] h-[100vh] flex">
+    <section className="w-[100%] h-[100vh] flex">
       <div className="w-[350px] flex flex-col items-center max-lg:hidden">
         <div className="mt-8">
           <Link href={'/'}>
@@ -153,6 +153,6 @@ export default function Register() {
           </form>
         </div>
       </div>
-    </main>
+    </section>
   );
 }

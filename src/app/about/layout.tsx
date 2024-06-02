@@ -10,5 +10,5 @@ export default function Layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <body className="bg-purple-black-2 flex justify-center">{children}</body>;
+  return <>{children}</>;
 }

@@ -13,9 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className="bg-purple-black-2 flex justify-center">
-        {children}
-      </body>
+      <body className="bg-purple-black-2">{children}</body>
     </html>
   );
 }

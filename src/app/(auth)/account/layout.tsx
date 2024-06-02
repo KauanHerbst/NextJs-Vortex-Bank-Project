@@ -12,9 +12,9 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <body className="bg-purple-black-2 flex justify-center">
+    <>
       <ToggleTheme></ToggleTheme>
       {children}
-    </body>
+    </>
   );
 }
