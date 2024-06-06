@@ -11,7 +11,7 @@ function ToggleTheme() {
     function checkTheme() {
       const storageTheme = localStorage.getItem('theme') || 'dark';
       setIsDarkTheme(storageTheme === 'dark');
-      document.querySelector('#toggle-theme')!.checked = storageTheme === 'dark';
+      (document.querySelector('#toggle-theme') as HTMLInputElement).checked = storageTheme === 'dark';
     }
 
     function changeTheme(event: React.ChangeEvent<HTMLInputElement>) {
