@@ -1,4 +1,5 @@
 import CustomInput from '@/components/app/CustomInput/CustomInput';
+import ToggleTheme from '@/components/app/ToggleTheme/ToggleTheme';
 import VortexBank from '@/svgs/VortexBank/VortexBankSvg';
 import Link from 'next/link';
 
@@ -37,6 +38,9 @@ export default function Register() {
             <h1 className="text-black dark:text-white neue-regular text-center text-3xl">
               Abra Sua Conta Na Vortex
             </h1>
+            <div className="left-[40%] max-sm:top-10 relative">
+              <ToggleTheme></ToggleTheme>
+            </div>
           </div>
           <div className="hidden max-lg:flex max-lg:justify-center max-lg:flex-col max-lg:items-center">
             <h2 className="neurial-regular text-3xl w-64 max-xl:text-2xl max-xl:px-4 max-lg:text-lg text-center mt-5 text-black dark:text-white">
@@ -60,7 +64,7 @@ export default function Register() {
         <div className="p-10 bg-white dark:bg-transparent">
           <form className="flex justify-center">
             <div className="">
-              <div className='flex max-md:flex-col max-md:justify-center max-md:items-center'>
+              <div className="flex max-md:flex-col max-md:justify-center max-md:items-center">
                 <CustomInput
                   class="w-96 max-xl:w-56 mr-32 max-md:mr-0"
                   for="cpf"
@@ -76,7 +80,7 @@ export default function Register() {
                   type="text"
                 ></CustomInput>
               </div>
-              <div className='flex max-md:flex-col max-md:justify-center max-md:items-center'>
+              <div className="flex max-md:flex-col max-md:justify-center max-md:items-center">
                 <CustomInput
                   class="w-96 mt-24 max-xl:w-56 mr-32 max-md:mr-0"
                   for="dataNascimento"
@@ -92,7 +96,7 @@ export default function Register() {
                   type="text"
                 ></CustomInput>
               </div>
-              <div className='flex max-md:flex-col max-md:justify-center max-md:items-center'>
+              <div className="flex max-md:flex-col max-md:justify-center max-md:items-center">
                 <CustomInput
                   class="w-96 mt-24 max-xl:w-56 mr-32 max-md:mr-0"
                   for="email"
@@ -108,7 +112,7 @@ export default function Register() {
                   type="email"
                 ></CustomInput>
               </div>
-              <div className='flex max-md:flex-col max-md:justify-center max-md:items-center'>
+              <div className="flex max-md:flex-col max-md:justify-center max-md:items-center">
                 <div className="text-2xl mt-10 mr-0">
                   <div className="mt-5">
                     <input
@@ -140,7 +144,7 @@ export default function Register() {
                     </label>
                   </div>
                 </div>
-                <div className='ml-24 max-xl:m-0 max-md:mr-10'>
+                <div className="ml-24 max-xl:m-0 max-md:mr-10">
                   <button
                     className="flex mt-32 w-80 items-center text-2xl justify-center text-center text-black dark:text-white btn-primary border-2 p-3 rounded-3xl dark:border-white border-black shadow-md hover:p-4 duration-150 max-xl:w-64 max-xl:p-2 max-xl:hover:p-3 max-xl:ml-10 max-md:mt-8 "
                     type="submit"
