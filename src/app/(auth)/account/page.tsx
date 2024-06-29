@@ -1,4 +1,5 @@
 import CustomInput from '@/components/app/CustomInput/CustomInput';
+import ToggleTheme from '@/components/app/ToggleTheme/ToggleTheme';
 import VortexBankHorizontalSvg from '@/svgs/VortexBankHorizontal/VortexBankHorizontalSvg';
 import Link from 'next/link';
 
@@ -7,6 +8,9 @@ export default function Account() {
     <>
       <main className="flex justify-center">
         <div className="flex flex-col">
+          <div className="top-[8%] left-[80%] max-md:left-[40%] relative">
+            <ToggleTheme></ToggleTheme>
+          </div>
           <div className="flex justify-center items-center ">
             <Link href={'/'}>
               <VortexBankHorizontalSvg width="300" height="300"></VortexBankHorizontalSvg>

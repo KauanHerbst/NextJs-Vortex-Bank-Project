@@ -13,7 +13,6 @@ export default function Layout({
 }>) {
   return (
     <>
-      <ToggleTheme></ToggleTheme>
       {children}
     </>
   );

@@ -11,7 +11,8 @@ function ToggleTheme() {
     function checkTheme() {
       const storageTheme = localStorage.getItem('theme') || 'dark';
       setIsDarkTheme(storageTheme === 'dark');
-      (document.querySelector('#toggle-theme') as HTMLInputElement).checked = storageTheme === 'dark';
+      (document.querySelector('#toggle-theme') as HTMLInputElement).checked =
+        storageTheme === 'dark';
     }
 
     function changeTheme(event: React.ChangeEvent<HTMLInputElement>) {
@@ -39,20 +40,16 @@ function ToggleTheme() {
   }, [isDarkTheme]);
 
   return (
-    <header className="w-[100%] z-50 fixed flex justify-center ease-in-out h-[95px]">
-      <div className="w-[1140px] max-sm:w-[296px] flex justify-end items-center max-xl:w-[85%]">
-        <label className="container-toggle-theme">
-          <input
-            type="checkbox"
-            name="toggle-theme"
-            id="toggle-theme"
-            defaultChecked={isDarkTheme}
-          />
-          <MoonSvg />
-          <SunSvg />
-        </label>
-      </div>
-    </header>
+    <label className="container-toggle-theme">
+      <input
+        type="checkbox"
+        name="toggle-theme"
+        id="toggle-theme"
+        defaultChecked={isDarkTheme}
+      />
+      <MoonSvg />
+      <SunSvg />
+    </label>
   );
 }
 
