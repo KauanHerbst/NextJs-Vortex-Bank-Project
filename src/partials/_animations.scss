@@ -69,3 +69,37 @@
       ease-in;
   }
 }
+
+@keyframes menuTransitionOpenAnimation {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes menuTransitionCloseAnimation {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.menuTransitionClose {
+  animation: menuTransitionCloseAnimation .5s normal linear forwards;
+}
+
+.menuTransitionOpen {
+  animation: menuTransitionOpenAnimation .5s normal linear forwards;
+}

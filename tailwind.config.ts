@@ -26,6 +26,7 @@ const config: Config = {
         'auxiliary-white-purple-black': '#A483B8',
         'gradient-blue-start': '#010231',
         'gradient-blue-end': '#030697',
+        'black-blue-primary': '#030637',
       },
     },
   },
