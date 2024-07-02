@@ -83,8 +83,8 @@ function Header() {
             <div className="px-6">
               <LogoVB width="60" height="60"></LogoVB>
             </div>
-            <div className='flex justify-center items-center'>
-              <div className='mr-10'>
+            <div className="flex justify-center items-center">
+              <div className="mr-10">
                 <ToggleTheme></ToggleTheme>
               </div>
               <button className="px-6" onClick={openMenuMobile}>
