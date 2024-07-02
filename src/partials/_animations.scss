@@ -97,9 +97,20 @@
 }
 
 .menuTransitionClose {
-  animation: menuTransitionCloseAnimation .5s normal linear forwards;
+  animation: menuTransitionCloseAnimation 0.5s normal linear forwards;
 }
 
 .menuTransitionOpen {
-  animation: menuTransitionOpenAnimation .5s normal linear forwards;
+  animation: menuTransitionOpenAnimation 0.5s normal linear forwards;
+}
+
+.glass {
+    transition: all 250ms;
+  &:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.37);
+  }
 }

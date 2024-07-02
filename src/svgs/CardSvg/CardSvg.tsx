@@ -4,6 +4,7 @@ import React from 'react';
 function CardSvg(Props: SvgProps) {
   return (
     <svg
+      className={Props.class}
       width={Props.width}
       height={Props.width}
       viewBox="0 0 24 18"

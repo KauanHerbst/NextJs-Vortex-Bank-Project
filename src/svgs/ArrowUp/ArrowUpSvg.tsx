@@ -1,8 +1,9 @@
-import { SvgProps } from "@/interfaces/svgprops";
+import { SvgProps } from '@/interfaces/svgprops';
 
 function ArrowUpSvg(Props: SvgProps) {
   return (
     <svg
+      className={Props.class}
       width={Props.width}
       height={Props.height}
       viewBox="0 0 93 97"
