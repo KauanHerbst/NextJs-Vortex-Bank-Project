@@ -18,20 +18,20 @@ function NavBarMobile(Props: MenuMobileProps) {
   return (
     <>
       <div
-        className="mt-[90vh] bg-white w-[50vw] max-sm:w-[70vw] max-sm:left-[30%] h-[100vh] justify-items-center shadow-2xl z-50 fixed left-[50%] hidden"
+        className="bg-white w-[50vw] h-screen top-0 max-sm:w-[70vw] max-sm:left-[30%] justify-items-center shadow-2xl z-50 fixed left-[50%] hidden"
         id="menu-mobile"
       >
         <div className="flex items-center flex-col w-[100%]">
           <div className="bg-black-blue-primary w-[100%] h-[94px] flex justify-between items-center">
             <Link href={'/'} className="ml-4 ">
-              <div className='sm:block max-sm:hidden'>
+              <div className="sm:block max-sm:hidden">
                 <VortexBankHorizontalSvg
                   width="190"
                   height="90"
                 ></VortexBankHorizontalSvg>
               </div>
-              <div className='sm:hidden'>
-                <VortexBank width='90' height='90'></VortexBank>
+              <div className="sm:hidden">
+                <VortexBank width="90" height="90"></VortexBank>
               </div>
             </Link>
             <button
