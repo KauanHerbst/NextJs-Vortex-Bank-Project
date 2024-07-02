@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Sobre() {
   return (
-    <main className='flex flex-col justify-center items-center'>
+    <main className='bg-purple-black-2 flex flex-col justify-center items-center'>
       <div>
         <VortexBank width="260" height="260"></VortexBank>
       </div>
