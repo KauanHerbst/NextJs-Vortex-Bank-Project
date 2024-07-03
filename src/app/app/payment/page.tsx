@@ -1,5 +1,4 @@
 'use client';
-import PaymentInfoCard from '@/components/app/PaymentInfoCard/PaymentInfoCard';
 import RecivePaymentCard from '@/components/app/RecivePaymentCard/RecivePaymentCard';
 import SendPaymentCard from '@/components/app/SendPaymentCard/SendPaymentCard';
 import { optionPayment } from '@/interfaces/OptionPayment';
@@ -29,7 +28,7 @@ export default function Payment() {
   }, [option]);
 
   return (
-    <div className="w-[100%] h-[100%] bg-white dark:bg-purple-black-2 max-md:h-[60%]">
+    <div className="w-[100%] h-[100%] bg-white dark:bg-purple-black-2 ">
       <div className="w-[100%] bg-white h-[72px] flex justify-center items-center gap-16 shadow-sm shadow-black neurial-medium">
         <button
           className="text-black w-[105px] h-[32px] hover:shadow-md hover:shadow-black rounded-[8px] duration-150"
@@ -50,7 +49,7 @@ export default function Payment() {
           Pedir
         </button>
       </div>
-      <div className="h-[80%] flex justify-center items-center neurial-regular">
+      <div className="h-[80%] max-md:h-[50%] flex justify-center items-center neurial-regular">
         {option === optionPayment.SEND ? (
           <SendPaymentCard></SendPaymentCard>
         ) : option === optionPayment.RECEIVE ? (
