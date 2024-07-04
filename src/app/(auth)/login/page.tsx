@@ -8,9 +8,9 @@ export default function Login() {
     <>
       <main className="flex justify-center">
         <div className="flex flex-col">
-            <div className='top-[8%] left-[80%] max-md:left-[40%] relative'>
-                <ToggleTheme></ToggleTheme>
-            </div>
+          <div className="top-[8%] left-[80%] max-md:left-[40%] relative">
+            <ToggleTheme></ToggleTheme>
+          </div>
           <div className="flex justify-center items-center ">
             <Link href={'/'}>
               <VortexBankHorizontalSvg width="250" height="250"></VortexBankHorizontalSvg>
@@ -38,9 +38,12 @@ export default function Login() {
               <Link href={'/'} className="text-blue-primary mt-3">
                 Esqueceu a senha?
               </Link>
-              <button className="text-center btn-primary bg-blue-primary p-2 px-20 rounded-2xl shadow-sm mt-4 hover:px-24 duration-100">
+              <Link
+                href={'/app/home'}
+                className="text-center btn-primary bg-blue-primary p-2 px-20 rounded-2xl shadow-sm mt-4 hover:px-24 duration-100"
+              >
                 Entrar
-              </button>
+              </Link>
             </div>
             <div className="flex justify-center items-center border-t-2 flex-col border-black dark:border-white dark:text-white text-black ">
               <h3 className="text-blue-primary mt-3">Não possui uma conta?</h3>
